@@ -15,7 +15,12 @@ namespace TutteeFrame
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+<<<<<<< Updated upstream
             Application.Run(new frmMain());
+=======
+            Application.Run(new frmAccountManagement());
+
+>>>>>>> Stashed changes
         }
     }
 }
