@@ -29,36 +29,38 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
-            this.metroLabel2 = new MetroFramework.Controls.MetroLabel();
-            this.dgvDetailTeacher = new System.Windows.Forms.DataGridView();
             this.dgvListAccount = new System.Windows.Forms.DataGridView();
+            this.dgvDetailTeacher = new System.Windows.Forms.DataGridView();
+            this.metroLabel2 = new MetroFramework.Controls.MetroLabel();
+            this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.metroLabel3 = new MetroFramework.Controls.MetroLabel();
-            this.metroLabel4 = new MetroFramework.Controls.MetroLabel();
-            this.metroLabel5 = new MetroFramework.Controls.MetroLabel();
-            this.metroLabel6 = new MetroFramework.Controls.MetroLabel();
-            this.metroLabel7 = new MetroFramework.Controls.MetroLabel();
-            this.metroLabel8 = new MetroFramework.Controls.MetroLabel();
-            this.metroLabel9 = new MetroFramework.Controls.MetroLabel();
-            this.tbTeacherID = new MetroFramework.Controls.MetroTextBox();
-            this.tbTeacherSurName = new MetroFramework.Controls.MetroTextBox();
-            this.tbTeacherPhoneNumber = new MetroFramework.Controls.MetroTextBox();
-            this.tbTeacherFistName = new MetroFramework.Controls.MetroTextBox();
-            this.tbTeacherMail = new MetroFramework.Controls.MetroTextBox();
-            this.tbTeacherAddress = new MetroFramework.Controls.MetroTextBox();
-            this.cbTeacherPosition = new MetroFramework.Controls.MetroComboBox();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.btDeleteTeacher = new MetroFramework.Controls.MetroButton();
-            this.btFixTeacher = new MetroFramework.Controls.MetroButton();
-            this.btNewTeacher = new MetroFramework.Controls.MetroButton();
-            this.metroTextBox1 = new MetroFramework.Controls.MetroTextBox();
-            this.metroTextBox2 = new MetroFramework.Controls.MetroTextBox();
+            this.tbTeacherSubjectID = new MetroFramework.Controls.MetroTextBox();
+            this.metroLabel12 = new MetroFramework.Controls.MetroLabel();
+            this.tbPassword = new MetroFramework.Controls.MetroTextBox();
+            this.tbUserName = new MetroFramework.Controls.MetroTextBox();
             this.metroLabel10 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel11 = new MetroFramework.Controls.MetroLabel();
+            this.cbTeacherPosition = new MetroFramework.Controls.MetroComboBox();
+            this.tbTeacherAddress = new MetroFramework.Controls.MetroTextBox();
+            this.tbTeacherMail = new MetroFramework.Controls.MetroTextBox();
+            this.tbTeacherFistName = new MetroFramework.Controls.MetroTextBox();
+            this.tbTeacherPhoneNumber = new MetroFramework.Controls.MetroTextBox();
+            this.tbTeacherSurName = new MetroFramework.Controls.MetroTextBox();
+            this.tbTeacherID = new MetroFramework.Controls.MetroTextBox();
+            this.metroLabel9 = new MetroFramework.Controls.MetroLabel();
+            this.metroLabel8 = new MetroFramework.Controls.MetroLabel();
+            this.metroLabel7 = new MetroFramework.Controls.MetroLabel();
+            this.metroLabel6 = new MetroFramework.Controls.MetroLabel();
+            this.metroLabel5 = new MetroFramework.Controls.MetroLabel();
+            this.metroLabel4 = new MetroFramework.Controls.MetroLabel();
+            this.metroLabel3 = new MetroFramework.Controls.MetroLabel();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.btNewTeacher = new MetroFramework.Controls.MetroButton();
+            this.btFixTeacher = new MetroFramework.Controls.MetroButton();
+            this.btDeleteTeacher = new MetroFramework.Controls.MetroButton();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvDetailTeacher)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvListAccount)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDetailTeacher)).BeginInit();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.SuspendLayout();
@@ -70,13 +72,38 @@
             this.groupBox1.Controls.Add(this.metroLabel2);
             this.groupBox1.Controls.Add(this.metroLabel1);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(2, 13);
+            this.groupBox1.Location = new System.Drawing.Point(7, 23);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(775, 227);
+            this.groupBox1.Size = new System.Drawing.Size(867, 304);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Account List";
-            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
+            // 
+            // dgvListAccount
+            // 
+            this.dgvListAccount.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvListAccount.Location = new System.Drawing.Point(22, 63);
+            this.dgvListAccount.Name = "dgvListAccount";
+            this.dgvListAccount.Size = new System.Drawing.Size(361, 92);
+            this.dgvListAccount.TabIndex = 4;
+            this.dgvListAccount.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvListAccount_CellContentClick);
+            // 
+            // dgvDetailTeacher
+            // 
+            this.dgvDetailTeacher.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvDetailTeacher.Location = new System.Drawing.Point(22, 222);
+            this.dgvDetailTeacher.Name = "dgvDetailTeacher";
+            this.dgvDetailTeacher.Size = new System.Drawing.Size(747, 69);
+            this.dgvDetailTeacher.TabIndex = 3;
+            // 
+            // metroLabel2
+            // 
+            this.metroLabel2.AutoSize = true;
+            this.metroLabel2.Location = new System.Drawing.Point(6, 200);
+            this.metroLabel2.Name = "metroLabel2";
+            this.metroLabel2.Size = new System.Drawing.Size(85, 19);
+            this.metroLabel2.TabIndex = 1;
+            this.metroLabel2.Text = "Detail Owner";
             // 
             // metroLabel1
             // 
@@ -87,36 +114,12 @@
             this.metroLabel1.TabIndex = 0;
             this.metroLabel1.Text = "Account";
             // 
-            // metroLabel2
-            // 
-            this.metroLabel2.AutoSize = true;
-            this.metroLabel2.Location = new System.Drawing.Point(6, 127);
-            this.metroLabel2.Name = "metroLabel2";
-            this.metroLabel2.Size = new System.Drawing.Size(85, 19);
-            this.metroLabel2.TabIndex = 1;
-            this.metroLabel2.Text = "Detail Owner";
-            this.metroLabel2.Click += new System.EventHandler(this.metroLabel2_Click);
-            // 
-            // dgvDetailTeacher
-            // 
-            this.dgvDetailTeacher.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvDetailTeacher.Location = new System.Drawing.Point(22, 149);
-            this.dgvDetailTeacher.Name = "dgvDetailTeacher";
-            this.dgvDetailTeacher.Size = new System.Drawing.Size(747, 69);
-            this.dgvDetailTeacher.TabIndex = 3;
-            // 
-            // dgvListAccount
-            // 
-            this.dgvListAccount.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvListAccount.Location = new System.Drawing.Point(22, 63);
-            this.dgvListAccount.Name = "dgvListAccount";
-            this.dgvListAccount.Size = new System.Drawing.Size(344, 61);
-            this.dgvListAccount.TabIndex = 4;
-            // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.metroTextBox1);
-            this.groupBox2.Controls.Add(this.metroTextBox2);
+            this.groupBox2.Controls.Add(this.tbTeacherSubjectID);
+            this.groupBox2.Controls.Add(this.metroLabel12);
+            this.groupBox2.Controls.Add(this.tbPassword);
+            this.groupBox2.Controls.Add(this.tbUserName);
             this.groupBox2.Controls.Add(this.metroLabel10);
             this.groupBox2.Controls.Add(this.metroLabel11);
             this.groupBox2.Controls.Add(this.cbTeacherPosition);
@@ -134,183 +137,45 @@
             this.groupBox2.Controls.Add(this.metroLabel4);
             this.groupBox2.Controls.Add(this.metroLabel3);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(2, 262);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(0, 0, 0, 0);
+            this.groupBox2.Location = new System.Drawing.Point(7, 333);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(0);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(775, 191);
+            this.groupBox2.Size = new System.Drawing.Size(775, 237);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Properties";
             // 
-            // metroLabel3
+            // tbTeacherSubjectID
             // 
-            this.metroLabel3.AutoSize = true;
-            this.metroLabel3.Location = new System.Drawing.Point(6, 42);
-            this.metroLabel3.Name = "metroLabel3";
-            this.metroLabel3.Size = new System.Drawing.Size(65, 19);
-            this.metroLabel3.TabIndex = 0;
-            this.metroLabel3.Text = "TeacherID";
+            this.tbTeacherSubjectID.Location = new System.Drawing.Point(348, 131);
+            this.tbTeacherSubjectID.Name = "tbTeacherSubjectID";
+            this.tbTeacherSubjectID.Size = new System.Drawing.Size(103, 23);
+            this.tbTeacherSubjectID.TabIndex = 19;
             // 
-            // metroLabel4
+            // metroLabel12
             // 
-            this.metroLabel4.AutoSize = true;
-            this.metroLabel4.Location = new System.Drawing.Point(6, 80);
-            this.metroLabel4.Name = "metroLabel4";
-            this.metroLabel4.Size = new System.Drawing.Size(64, 19);
-            this.metroLabel4.TabIndex = 1;
-            this.metroLabel4.Text = "SurName";
+            this.metroLabel12.AutoSize = true;
+            this.metroLabel12.Location = new System.Drawing.Point(262, 135);
+            this.metroLabel12.Name = "metroLabel12";
+            this.metroLabel12.Size = new System.Drawing.Size(63, 19);
+            this.metroLabel12.TabIndex = 18;
+            this.metroLabel12.Text = "SubjectID";
             // 
-            // metroLabel5
+            // tbPassword
             // 
-            this.metroLabel5.AutoSize = true;
-            this.metroLabel5.Location = new System.Drawing.Point(262, 80);
-            this.metroLabel5.Name = "metroLabel5";
-            this.metroLabel5.Size = new System.Drawing.Size(69, 19);
-            this.metroLabel5.TabIndex = 2;
-            this.metroLabel5.Text = "FirstName";
+            this.tbPassword.Location = new System.Drawing.Point(581, 38);
+            this.tbPassword.Name = "tbPassword";
+            this.tbPassword.PasswordChar = '●';
+            this.tbPassword.Size = new System.Drawing.Size(184, 23);
+            this.tbPassword.TabIndex = 17;
+            this.tbPassword.UseSystemPasswordChar = true;
             // 
-            // metroLabel6
+            // tbUserName
             // 
-            this.metroLabel6.AutoSize = true;
-            this.metroLabel6.Location = new System.Drawing.Point(507, 80);
-            this.metroLabel6.Name = "metroLabel6";
-            this.metroLabel6.Size = new System.Drawing.Size(51, 19);
-            this.metroLabel6.TabIndex = 3;
-            this.metroLabel6.Text = "Addess";
-            // 
-            // metroLabel7
-            // 
-            this.metroLabel7.AutoSize = true;
-            this.metroLabel7.Location = new System.Drawing.Point(6, 135);
-            this.metroLabel7.Name = "metroLabel7";
-            this.metroLabel7.Size = new System.Drawing.Size(46, 19);
-            this.metroLabel7.TabIndex = 4;
-            this.metroLabel7.Text = "Phone";
-            // 
-            // metroLabel8
-            // 
-            this.metroLabel8.AutoSize = true;
-            this.metroLabel8.Location = new System.Drawing.Point(262, 126);
-            this.metroLabel8.Name = "metroLabel8";
-            this.metroLabel8.Size = new System.Drawing.Size(34, 19);
-            this.metroLabel8.TabIndex = 5;
-            this.metroLabel8.Text = "Mail";
-            this.metroLabel8.Click += new System.EventHandler(this.metroLabel8_Click);
-            // 
-            // metroLabel9
-            // 
-            this.metroLabel9.AutoSize = true;
-            this.metroLabel9.Location = new System.Drawing.Point(507, 126);
-            this.metroLabel9.Name = "metroLabel9";
-            this.metroLabel9.Size = new System.Drawing.Size(54, 19);
-            this.metroLabel9.TabIndex = 6;
-            this.metroLabel9.Text = "Position";
-            // 
-            // tbTeacherID
-            // 
-            this.tbTeacherID.Location = new System.Drawing.Point(94, 38);
-            this.tbTeacherID.Name = "tbTeacherID";
-            this.tbTeacherID.Size = new System.Drawing.Size(124, 23);
-            this.tbTeacherID.TabIndex = 7;
-            // 
-            // tbTeacherSurName
-            // 
-            this.tbTeacherSurName.Location = new System.Drawing.Point(94, 80);
-            this.tbTeacherSurName.Name = "tbTeacherSurName";
-            this.tbTeacherSurName.Size = new System.Drawing.Size(124, 23);
-            this.tbTeacherSurName.TabIndex = 8;
-            // 
-            // tbTeacherPhoneNumber
-            // 
-            this.tbTeacherPhoneNumber.Location = new System.Drawing.Point(94, 135);
-            this.tbTeacherPhoneNumber.Name = "tbTeacherPhoneNumber";
-            this.tbTeacherPhoneNumber.Size = new System.Drawing.Size(124, 23);
-            this.tbTeacherPhoneNumber.TabIndex = 9;
-            // 
-            // tbTeacherFistName
-            // 
-            this.tbTeacherFistName.Location = new System.Drawing.Point(348, 80);
-            this.tbTeacherFistName.Name = "tbTeacherFistName";
-            this.tbTeacherFistName.Size = new System.Drawing.Size(103, 23);
-            this.tbTeacherFistName.TabIndex = 10;
-            // 
-            // tbTeacherMail
-            // 
-            this.tbTeacherMail.Location = new System.Drawing.Point(348, 135);
-            this.tbTeacherMail.Name = "tbTeacherMail";
-            this.tbTeacherMail.Size = new System.Drawing.Size(103, 23);
-            this.tbTeacherMail.TabIndex = 11;
-            // 
-            // tbTeacherAddress
-            // 
-            this.tbTeacherAddress.Location = new System.Drawing.Point(581, 80);
-            this.tbTeacherAddress.Name = "tbTeacherAddress";
-            this.tbTeacherAddress.Size = new System.Drawing.Size(184, 23);
-            this.tbTeacherAddress.TabIndex = 12;
-            // 
-            // cbTeacherPosition
-            // 
-            this.cbTeacherPosition.FormattingEnabled = true;
-            this.cbTeacherPosition.ItemHeight = 23;
-            this.cbTeacherPosition.Items.AddRange(new object[] {
-            "Admin",
-            "Ministry",
-            "Teacher"});
-            this.cbTeacherPosition.Location = new System.Drawing.Point(581, 126);
-            this.cbTeacherPosition.Name = "cbTeacherPosition";
-            this.cbTeacherPosition.Size = new System.Drawing.Size(184, 29);
-            this.cbTeacherPosition.TabIndex = 13;
-            this.cbTeacherPosition.SelectedIndexChanged += new System.EventHandler(this.metroComboBox1_SelectedIndexChanged);
-            // 
-            // groupBox3
-            // 
-            this.groupBox3.Controls.Add(this.btNewTeacher);
-            this.groupBox3.Controls.Add(this.btFixTeacher);
-            this.groupBox3.Controls.Add(this.btDeleteTeacher);
-            this.groupBox3.Location = new System.Drawing.Point(780, 262);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(89, 191);
-            this.groupBox3.TabIndex = 2;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Feature";
-            // 
-            // btDeleteTeacher
-            // 
-            this.btDeleteTeacher.Location = new System.Drawing.Point(6, 42);
-            this.btDeleteTeacher.Name = "btDeleteTeacher";
-            this.btDeleteTeacher.Size = new System.Drawing.Size(75, 23);
-            this.btDeleteTeacher.TabIndex = 0;
-            this.btDeleteTeacher.Text = "Delete";
-            // 
-            // btFixTeacher
-            // 
-            this.btFixTeacher.Location = new System.Drawing.Point(6, 87);
-            this.btFixTeacher.Name = "btFixTeacher";
-            this.btFixTeacher.Size = new System.Drawing.Size(75, 23);
-            this.btFixTeacher.TabIndex = 1;
-            this.btFixTeacher.Text = "Fixes";
-            // 
-            // btNewTeacher
-            // 
-            this.btNewTeacher.Location = new System.Drawing.Point(6, 135);
-            this.btNewTeacher.Name = "btNewTeacher";
-            this.btNewTeacher.Size = new System.Drawing.Size(75, 23);
-            this.btNewTeacher.TabIndex = 2;
-            this.btNewTeacher.Text = "New";
-            // 
-            // metroTextBox1
-            // 
-            this.metroTextBox1.Location = new System.Drawing.Point(581, 38);
-            this.metroTextBox1.Name = "metroTextBox1";
-            this.metroTextBox1.Size = new System.Drawing.Size(184, 23);
-            this.metroTextBox1.TabIndex = 17;
-            // 
-            // metroTextBox2
-            // 
-            this.metroTextBox2.Location = new System.Drawing.Point(348, 38);
-            this.metroTextBox2.Name = "metroTextBox2";
-            this.metroTextBox2.Size = new System.Drawing.Size(103, 23);
-            this.metroTextBox2.TabIndex = 16;
+            this.tbUserName.Location = new System.Drawing.Point(348, 38);
+            this.tbUserName.Name = "tbUserName";
+            this.tbUserName.Size = new System.Drawing.Size(103, 23);
+            this.tbUserName.TabIndex = 16;
             // 
             // metroLabel10
             // 
@@ -330,20 +195,174 @@
             this.metroLabel11.TabIndex = 14;
             this.metroLabel11.Text = "UserName";
             // 
+            // cbTeacherPosition
+            // 
+            this.cbTeacherPosition.FormattingEnabled = true;
+            this.cbTeacherPosition.ItemHeight = 23;
+            this.cbTeacherPosition.Items.AddRange(new object[] {
+            "Admin",
+            "Ministry",
+            "Teacher"});
+            this.cbTeacherPosition.Location = new System.Drawing.Point(581, 126);
+            this.cbTeacherPosition.Name = "cbTeacherPosition";
+            this.cbTeacherPosition.Size = new System.Drawing.Size(184, 29);
+            this.cbTeacherPosition.TabIndex = 13;
+           
+            // 
+            // tbTeacherAddress
+            // 
+            this.tbTeacherAddress.Location = new System.Drawing.Point(581, 80);
+            this.tbTeacherAddress.Name = "tbTeacherAddress";
+            this.tbTeacherAddress.Size = new System.Drawing.Size(184, 23);
+            this.tbTeacherAddress.TabIndex = 12;
+            // 
+            // tbTeacherMail
+            // 
+            this.tbTeacherMail.Location = new System.Drawing.Point(94, 191);
+            this.tbTeacherMail.Name = "tbTeacherMail";
+            this.tbTeacherMail.Size = new System.Drawing.Size(210, 23);
+            this.tbTeacherMail.TabIndex = 11;
+            // 
+            // tbTeacherFistName
+            // 
+            this.tbTeacherFistName.Location = new System.Drawing.Point(348, 80);
+            this.tbTeacherFistName.Name = "tbTeacherFistName";
+            this.tbTeacherFistName.Size = new System.Drawing.Size(103, 23);
+            this.tbTeacherFistName.TabIndex = 10;
+            // 
+            // tbTeacherPhoneNumber
+            // 
+            this.tbTeacherPhoneNumber.Location = new System.Drawing.Point(94, 135);
+            this.tbTeacherPhoneNumber.Name = "tbTeacherPhoneNumber";
+            this.tbTeacherPhoneNumber.Size = new System.Drawing.Size(124, 23);
+            this.tbTeacherPhoneNumber.TabIndex = 9;
+            // 
+            // tbTeacherSurName
+            // 
+            this.tbTeacherSurName.Location = new System.Drawing.Point(94, 80);
+            this.tbTeacherSurName.Name = "tbTeacherSurName";
+            this.tbTeacherSurName.Size = new System.Drawing.Size(84, 23);
+            this.tbTeacherSurName.TabIndex = 8;
+            // 
+            // tbTeacherID
+            // 
+            this.tbTeacherID.Location = new System.Drawing.Point(94, 38);
+            this.tbTeacherID.Name = "tbTeacherID";
+            this.tbTeacherID.Size = new System.Drawing.Size(84, 23);
+            this.tbTeacherID.TabIndex = 7;
+            // 
+            // metroLabel9
+            // 
+            this.metroLabel9.AutoSize = true;
+            this.metroLabel9.Location = new System.Drawing.Point(507, 126);
+            this.metroLabel9.Name = "metroLabel9";
+            this.metroLabel9.Size = new System.Drawing.Size(54, 19);
+            this.metroLabel9.TabIndex = 6;
+            this.metroLabel9.Text = "Position";
+            // 
+            // metroLabel8
+            // 
+            this.metroLabel8.AutoSize = true;
+            this.metroLabel8.Location = new System.Drawing.Point(8, 195);
+            this.metroLabel8.Name = "metroLabel8";
+            this.metroLabel8.Size = new System.Drawing.Size(34, 19);
+            this.metroLabel8.TabIndex = 5;
+            this.metroLabel8.Text = "Mail";
+            // 
+            // metroLabel7
+            // 
+            this.metroLabel7.AutoSize = true;
+            this.metroLabel7.Location = new System.Drawing.Point(6, 135);
+            this.metroLabel7.Name = "metroLabel7";
+            this.metroLabel7.Size = new System.Drawing.Size(46, 19);
+            this.metroLabel7.TabIndex = 4;
+            this.metroLabel7.Text = "Phone";
+            // 
+            // metroLabel6
+            // 
+            this.metroLabel6.AutoSize = true;
+            this.metroLabel6.Location = new System.Drawing.Point(507, 80);
+            this.metroLabel6.Name = "metroLabel6";
+            this.metroLabel6.Size = new System.Drawing.Size(51, 19);
+            this.metroLabel6.TabIndex = 3;
+            this.metroLabel6.Text = "Addess";
+            // 
+            // metroLabel5
+            // 
+            this.metroLabel5.AutoSize = true;
+            this.metroLabel5.Location = new System.Drawing.Point(262, 80);
+            this.metroLabel5.Name = "metroLabel5";
+            this.metroLabel5.Size = new System.Drawing.Size(69, 19);
+            this.metroLabel5.TabIndex = 2;
+            this.metroLabel5.Text = "FirstName";
+            // 
+            // metroLabel4
+            // 
+            this.metroLabel4.AutoSize = true;
+            this.metroLabel4.Location = new System.Drawing.Point(6, 80);
+            this.metroLabel4.Name = "metroLabel4";
+            this.metroLabel4.Size = new System.Drawing.Size(64, 19);
+            this.metroLabel4.TabIndex = 1;
+            this.metroLabel4.Text = "SurName";
+            // 
+            // metroLabel3
+            // 
+            this.metroLabel3.AutoSize = true;
+            this.metroLabel3.Location = new System.Drawing.Point(6, 42);
+            this.metroLabel3.Name = "metroLabel3";
+            this.metroLabel3.Size = new System.Drawing.Size(65, 19);
+            this.metroLabel3.TabIndex = 0;
+            this.metroLabel3.Text = "TeacherID";
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.btNewTeacher);
+            this.groupBox3.Controls.Add(this.btFixTeacher);
+            this.groupBox3.Controls.Add(this.btDeleteTeacher);
+            this.groupBox3.Location = new System.Drawing.Point(785, 333);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(89, 237);
+            this.groupBox3.TabIndex = 2;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Feature";
+            // 
+            // btNewTeacher
+            // 
+            this.btNewTeacher.Location = new System.Drawing.Point(6, 135);
+            this.btNewTeacher.Name = "btNewTeacher";
+            this.btNewTeacher.Size = new System.Drawing.Size(75, 23);
+            this.btNewTeacher.TabIndex = 2;
+            this.btNewTeacher.Text = "Add New";
+            this.btNewTeacher.Click += new System.EventHandler(this.btNewTeacher_Click);
+            // 
+            // btFixTeacher
+            // 
+            this.btFixTeacher.Location = new System.Drawing.Point(6, 87);
+            this.btFixTeacher.Name = "btFixTeacher";
+            this.btFixTeacher.Size = new System.Drawing.Size(75, 23);
+            this.btFixTeacher.TabIndex = 1;
+            this.btFixTeacher.Text = "Fixes";
+            // 
+            // btDeleteTeacher
+            // 
+            this.btDeleteTeacher.Location = new System.Drawing.Point(6, 42);
+            this.btDeleteTeacher.Name = "btDeleteTeacher";
+            this.btDeleteTeacher.Size = new System.Drawing.Size(75, 23);
+            this.btDeleteTeacher.TabIndex = 0;
+            this.btDeleteTeacher.Text = "Delete";
+            // 
             // frmAccountManagement
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.ClientSize = new System.Drawing.Size(872, 452);
+            this.ClientSize = new System.Drawing.Size(888, 572);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Name = "frmAccountManagement";
-            this.Text = "";
             this.Load += new System.EventHandler(this.frmAccountManagement_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvDetailTeacher)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvListAccount)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDetailTeacher)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.groupBox3.ResumeLayout(false);
@@ -377,9 +396,11 @@
         private MetroFramework.Controls.MetroButton btNewTeacher;
         private MetroFramework.Controls.MetroButton btFixTeacher;
         private MetroFramework.Controls.MetroButton btDeleteTeacher;
-        private MetroFramework.Controls.MetroTextBox metroTextBox1;
-        private MetroFramework.Controls.MetroTextBox metroTextBox2;
+        private MetroFramework.Controls.MetroTextBox tbPassword;
+        private MetroFramework.Controls.MetroTextBox tbUserName;
         private MetroFramework.Controls.MetroLabel metroLabel10;
         private MetroFramework.Controls.MetroLabel metroLabel11;
+        private MetroFramework.Controls.MetroTextBox tbTeacherSubjectID;
+        private MetroFramework.Controls.MetroLabel metroLabel12;
     }
 }
